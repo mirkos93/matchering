@@ -52,7 +52,7 @@ def create_preview(
         result, config.preview_size, config.preview_analysis_step
     )
 
-    result_loudest_piece_idx = np.argmax(batch_rms_2d(result_pieces))
+    result_loudest_piece_idx = np.argmax(batch_rms_2d(result))
 
     target_piece = target_pieces[result_loudest_piece_idx].copy()
     result_piece = result_pieces[result_loudest_piece_idx].copy()
