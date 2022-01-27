@@ -38,6 +38,7 @@ def create_preview(
     info(Code.INFO_MAKING_PREVIEWS)
 
     target = clip(target, config.threshold)
+    print(target)
 
     debug(
         f"The maximum duration of the preview is {config.preview_size / config.internal_sample_rate} seconds, "
