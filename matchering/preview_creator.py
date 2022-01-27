@@ -79,7 +79,7 @@ def create_preview(
     if preview_target:
         save(
             preview_target.file,
-            target_piece,
+            target,
             config.internal_sample_rate,
             preview_target.subtype,
             "target preview",
@@ -88,7 +88,7 @@ def create_preview(
     if preview_result:
         save(
             preview_result.file,
-            result_piece,
+            result,
             config.internal_sample_rate,
             preview_result.subtype,
             "result preview",
